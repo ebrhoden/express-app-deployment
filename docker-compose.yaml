@@ -1,0 +1,9 @@
+services:
+
+  beermapping:
+    build: .
+    container_name: beermapping
+    platform: linux/amd64
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
